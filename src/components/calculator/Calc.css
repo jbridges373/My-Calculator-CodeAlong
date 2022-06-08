@@ -5,10 +5,14 @@
   }
   
   .calculator {
+    margin-top: 250px;
+    margin-bottom: -180px;
     border: 1px solid #ccc;
     background-color: black;
     border-radius: 0;
-    position: absolute;
+    position: relative;
+    justify-content: center;
+    align-items: center;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);

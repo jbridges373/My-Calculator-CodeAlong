@@ -13,6 +13,9 @@ const Numbers = ({ handleClick }) => {
       ".",
       "0",
       "=",
+      "",
+      "",
+      "",
     ];
     return (
       <div className="calculator-keys">
