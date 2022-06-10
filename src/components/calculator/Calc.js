@@ -1,3 +1,4 @@
+import { motion } from "framer-motion"
 import "./Calc.css";
 import Numbers from "./Numbers";
 import Operators from "./Operators";
@@ -20,12 +21,23 @@ const App = () => {
     calculate(display);
   };
   return (
-    <div className="App calculator">
+    <motion.div animate={{ 
+      scale: 1,
+      opacity: 1,
+    }}
+    initial={{ 
+      scale: 0,
+      opacity: 0,     
+    }}
+    transition={{ 
+        ease: "backIn",
+        duration: 5,
+    }} className="App calculator">
       
       <h2 className="calculator-screen">{input}</h2>
       <Operators handleClick={handleClick} />
       <Numbers handleClick={handleClick} />
-    </div>
+    </motion.div>
     
   );
 };

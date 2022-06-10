@@ -1,3 +1,4 @@
+import { motion } from "framer-motion"
 import React, {useState} from 'react'
 import {HiOutlineMenuAlt4} from 'react-icons/hi'
 import {FaRegTimesCircle} from 'react-icons/fa'
@@ -13,7 +14,15 @@ const Navbar = () => {
     return (
         <div className='navbar'>
             <div className='container'>
-                <h1><span><BsFillCalculatorFill />Calc</span>ulator <br/>by John Bridges</h1>
+                <motion.h1
+                animate={{ scale: 1}}
+                initial={{ scale: 0 }}
+                transition={{ 
+                    ease: "backIn",
+                    duration: 2,
+                }}
+                >
+                    <span><BsFillCalculatorFill />Calc</span>ulator <br/>by John Bridges</motion.h1>
                                
                 <button className='btn'>Sign In</button>
                 <ul className={click ? 'nav-menu active' : 'nav-menu'}>

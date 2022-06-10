@@ -5,8 +5,8 @@
   }
   
   .calculator {
-    margin-top: 250px;
-    margin-bottom: -180px;
+    
+    margin-top: 50px;    
     border: 1px solid #ccc;
     background-color: white;
     border-radius: 0;
@@ -14,7 +14,7 @@
     justify-content: center;
     align-items: center;
     top: 50%;
-    left: 50%;
+    left: 40%;
     transform: translate(-50%, -50%);
     width: 400px;
   }
@@ -55,4 +55,21 @@
   .calculator-keys {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+
+  @media screen and (max-width: 500px) {
+    .calculator {
+    
+      margin-top: 50px;    
+      border: 1px solid #ccc;
+      background-color: white;
+      border-radius: 0;
+      position: relative;
+      justify-content: center;
+      align-items: center;
+      top: 50%;
+      left: 40px;
+      transform: translate(-50%, -50%);
+      width: 400px;
+    }
   }
